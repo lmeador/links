@@ -1,0 +1,79 @@
+{
+  "_howto": "To add a link: copy one block inside 'featured', paste it at the top, change the four values, save. Newest date sorts to the top by itself and gets a yellow NEW chip for 21 days. Keep a comma after every block EXCEPT the last one in a list.",
+
+  "org": {
+    "name": "Elizabeth Layton Center",
+    "tagline": "Comprehensive, integrated behavioral health services for our community.",
+    "crisisIntro": "If you need help right now",
+    "website": "https://www.laytoncenter.org/",
+    "websiteLabel": "laytoncenter.org",
+    "footer": ""
+  },
+
+  "crisis": [
+    {
+      "title": "Layton Center Crisis Line",
+      "description": "The fastest way to reach local help and resources.",
+      "meta": "Local · 24/7 · Confidential",
+      "url": "https://www.laytoncenter.org/our-services/crisisemergency/"
+    },
+    {
+      "title": "988 Suicide & Crisis Lifeline",
+      "description": "Call or text 988 from anywhere in the U.S.",
+      "meta": "National · 24/7 · Confidential",
+      "url": "https://988lifeline.org/"
+    }
+  ],
+
+  "featured": [
+    {
+      "title": "Chamber Coffee with the Layton Center",
+      "description": "See photos and details on Facebook",
+      "url": "https://www.facebook.com/share/1G54Tf3gSC/",
+      "date": "2026-08-28"
+    },
+    {
+      "title": "How to talk to someone about getting help",
+      "description": "A practical guide from SAMHSA",
+      "url": "https://www.samhsa.gov/find-support/helping-someone/how-to-talk-to-someone-about-help",
+      "date": "2026-08-20"
+    }
+  ],
+
+  "permanent": [
+    {
+      "title": "Our services",
+      "description": "What we treat and how to get started",
+      "url": "https://www.laytoncenter.org/"
+    },
+    {
+      "title": "Careers at the Layton Center",
+      "description": "Open positions and how to apply",
+      "url": "https://recruiting.paylocity.com/recruiting/jobs/All/58dc1f30-e893-4dd0-9d06-0cf79f0b7abe/Elizabeth-Layton-Center-Inc"
+    }
+  ],
+
+  "social": [
+    { "icon": "instagram", "label": "Instagram", "handle": "@elizabethlaytoncenter", "url": "https://www.instagram.com/elizabethlaytoncenter/" },
+    { "icon": "facebook",  "label": "Facebook",  "handle": "/LaytonCenter",          "url": "https://www.facebook.com/LaytonCenter/" },
+    { "icon": "linkedin",  "label": "LinkedIn",  "handle": "Elizabeth Layton Center", "url": "https://www.linkedin.com/company/elizabeth-layton-center/" }
+  ],
+
+  "internal": {
+    "careersUrl": "https://recruiting.paylocity.com/recruiting/jobs/All/58dc1f30-e893-4dd0-9d06-0cf79f0b7abe/Elizabeth-Layton-Center-Inc",
+    "careersNote": "Always current — this link never goes stale.",
+    "referralBlurb": "I work at the Elizabeth Layton Center and I think you'd be a good fit for our team. Here's everything we have open right now:",
+    "otherLinks": [
+      {
+        "title": "Public link page",
+        "description": "What the Instagram bio link points to",
+        "url": "index.html"
+      },
+      {
+        "title": "Layton Center website",
+        "description": "laytoncenter.org",
+        "url": "https://www.laytoncenter.org/"
+      }
+    ]
+  }
+}
