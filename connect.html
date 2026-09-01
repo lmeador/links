@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Layton Center Links</title>
-<meta name="description" content="Elizabeth Layton Center — crisis support, services, careers, and what we're sharing right now.">
+<title>Layton Center Online</title>
+<meta name="description" content="Follow the Elizabeth Layton Center on Instagram, Facebook, and LinkedIn — plus our website and open positions.">
 <meta name="color-scheme" content="light dark">
-<meta property="og:title" content="Elizabeth Layton Center">
-<meta property="og:description" content="Elizabeth Layton Center — crisis support, services, careers, and what we're sharing right now.">
+<meta property="og:title" content="Elizabeth Layton Center — Find us online">
+<meta property="og:description" content="Follow the Elizabeth Layton Center on Instagram, Facebook, and LinkedIn — plus our website and open positions.">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="icon" type="image/png" href="favicon-dark.png" media="(prefers-color-scheme: dark)">
@@ -18,27 +18,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap">
 <style>
-  /* ==========================================================
-     BRAND TOKENS — Elizabeth Layton Center
-     Blue #387CBF · Yellow #FCD54B · Green #6EA242 · Plum #4E3E59
-     ========================================================== */
+  /* Same brand tokens as index.html — see that file for the source of truth. */
   :root {
-    --blue:        #2f6ba6;   /* primary, darkened from #387CBF for text contrast */
-    --blue-pure:   #387cbf;   /* brand blue as given — borders, large areas */
-    --blue-deep:   #23527f;
+    --blue:        #2f6ba6;
+    --blue-pure:   #387cbf;
     --blue-soft:   #e6f0f8;
     --yellow:      #fcd54b;
-    --green:       #55832f;   /* darkened from #6EA242 for text contrast */
+    --green:       #55832f;
     --green-pure:  #6ea242;
     --plum:        #4e3e59;
-    --plum-soft:   #efeaf3;
 
     --ground:      #f2f5f8;
     --surface:     #ffffff;
     --ink:         #1c2531;
     --ink-soft:    #566373;
     --line:        #dbe3ec;
-    --rule:        #55606e;   /* the logo's double-rule grey */
+    --rule:        #55606e;
     --shadow:      0 1px 2px rgba(28,37,49,.05), 0 8px 20px -12px rgba(28,37,49,.18);
 
     --radius:      12px;
@@ -50,46 +45,23 @@
     --logo-light-display: block;
     --logo-dark-display: none;
   }
-
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --blue:       #7cb4e4;
-      --blue-pure:  #7cb4e4;
-      --blue-deep:  #a4cdef;
-      --blue-soft:  #16283a;
-      --yellow:     #fcd54b;
-      --green:      #97cb6e;
-      --green-pure: #97cb6e;
-      --plum:       #bfa9d0;
-      --plum-soft:  #262034;
-      --ground:     #0e1620;
-      --surface:    #18212d;
-      --ink:        #e7eef6;
-      --ink-soft:   #97a5b6;
-      --line:       #27323f;
-      --rule:       #8a97a6;
-      --shadow:     0 1px 2px rgba(0,0,0,.45), 0 8px 22px -14px rgba(0,0,0,.7);
+      --blue: #7cb4e4; --blue-pure: #7cb4e4; --blue-soft: #16283a;
+      --green: #97cb6e; --green-pure: #97cb6e; --plum: #bfa9d0;
+      --ground: #0e1620; --surface: #18212d; --ink: #e7eef6; --ink-soft: #97a5b6;
+      --line: #27323f; --rule: #8a97a6;
+      --shadow: 0 1px 2px rgba(0,0,0,.45), 0 8px 22px -14px rgba(0,0,0,.7);
       --logo-light-display: none;
       --logo-dark-display: block;
     }
   }
   :root[data-theme="dark"] {
-    --blue:       #7cb4e4;
-    --blue-pure:  #7cb4e4;
-    --blue-deep:  #a4cdef;
-    --blue-soft:  #16283a;
-    --yellow:     #fcd54b;
-    --green:      #97cb6e;
-    --green-pure: #97cb6e;
-    --plum:       #bfa9d0;
-    --plum-soft:  #262034;
-    --ground:     #0e1620;
-    --surface:    #18212d;
-    --ink:        #e7eef6;
-    --ink-soft:   #97a5b6;
-    --line:       #27323f;
-    --rule:       #8a97a6;
-    --shadow:     0 1px 2px rgba(0,0,0,.45), 0 8px 22px -14px rgba(0,0,0,.7);
+    --blue: #7cb4e4; --blue-pure: #7cb4e4; --blue-soft: #16283a;
+    --green: #97cb6e; --green-pure: #97cb6e; --plum: #bfa9d0;
+    --ground: #0e1620; --surface: #18212d; --ink: #e7eef6; --ink-soft: #97a5b6;
+    --line: #27323f; --rule: #8a97a6;
+    --shadow: 0 1px 2px rgba(0,0,0,.45), 0 8px 22px -14px rgba(0,0,0,.7);
     --logo-light-display: none;
     --logo-dark-display: block;
   }
@@ -118,188 +90,100 @@
   /* ---------- Masthead ---------- */
   .masthead { display: flex; flex-direction: column; align-items: center; gap: .875rem; }
   .masthead h1 { margin: 0; width: 100%; }
-  .masthead img {
-    width: 100%;
-    max-width: 19rem;
-    margin: 0 auto;
-    height: auto;
-  }
-  /* Two real artwork files rather than a CSS invert: the reversed logo keeps its
-     own black flower panel, which inverting would have turned inside out. */
+  .masthead img { width: 100%; max-width: 19rem; margin: 0 auto; height: auto; }
   .masthead .logo-light { display: var(--logo-light-display); }
   .masthead .logo-dark  { display: var(--logo-dark-display); }
   .tagline {
     margin: 0;
     font-family: var(--serif);
-    font-size: 1.0625rem;
-    line-height: 1.45;
+    font-size: 1.1875rem;
+    line-height: 1.4;
     text-align: center;
     text-wrap: balance;
-    color: var(--ink-soft);
+    color: var(--ink);
   }
 
-  /* ---------- The logo's double-rule, reused as a section divider ---------- */
-  .section-head {
-    display: flex;
-    align-items: center;
-    gap: .75rem;
-    padding: 0 .125rem;
-  }
+  /* ---------- Section heads: the logo's double rule ---------- */
+  .section { display: flex; flex-direction: column; gap: .625rem; }
+  .section-head { display: flex; align-items: center; gap: .75rem; padding: 0 .125rem; }
   .section-head h2 {
-    margin: 0;
-    font-size: .6875rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .12em;
-    color: var(--ink-soft);
-    white-space: nowrap;
+    margin: 0; font-size: .6875rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .12em;
+    color: var(--ink-soft); white-space: nowrap;
   }
   .section-head .rule {
-    flex: 1;
-    height: 4px;
+    flex: 1; height: 4px;
     border-top: 1px solid var(--rule);
     border-bottom: 2px solid var(--rule);
     opacity: .55;
   }
-  .section-head .note {
-    font-size: .75rem;
-    color: var(--ink-soft);
-    white-space: nowrap;
-  }
 
-  /* ---------- Crisis block ---------- */
+  /* ---------- Crisis ---------- */
   .crisis-block { display: flex; flex-direction: column; gap: .5rem; }
   .crisis-intro {
-    font-size: .6875rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .12em;
-    color: var(--plum);
-    padding: 0 .125rem;
+    font-size: .6875rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .12em;
+    color: var(--plum); padding: 0 .125rem;
   }
   .crisis {
-    display: flex;
-    align-items: center;
-    gap: .875rem;
+    display: flex; align-items: center; gap: .875rem;
     padding: .8125rem 1rem;
     background: var(--surface);
     border: 1px solid var(--line);
     border-left: 4px solid var(--plum);
     border-radius: var(--radius);
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; color: inherit;
     box-shadow: var(--shadow);
-    transition: border-color .15s ease, transform .15s ease;
+    transition: transform .15s ease, border-color .15s ease;
   }
   .crisis:hover { transform: translateY(-1px); }
   .crisis:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
   .crisis .c-body { flex: 1; min-width: 0; }
   .crisis .c-title {
-    display: block;
-    font-family: var(--serif);
-    font-weight: 600;
-    font-size: 1.0625rem;
-    line-height: 1.25;
+    display: block; font-family: var(--serif);
+    font-weight: 600; font-size: 1.0625rem; line-height: 1.25;
   }
   .crisis .c-sub { display: block; font-size: .8125rem; color: var(--ink-soft); margin-top: .125rem; }
   .crisis .c-meta {
-    display: block;
-    font-size: .6875rem;
-    font-weight: 600;
-    letter-spacing: .06em;
-    text-transform: uppercase;
-    color: var(--plum);
-    margin-top: .25rem;
+    display: block; font-size: .6875rem; font-weight: 600;
+    letter-spacing: .06em; text-transform: uppercase;
+    color: var(--plum); margin-top: .25rem;
   }
 
-  /* ---------- Link buttons ---------- */
+  /* ---------- Link rows ---------- */
   .stack { display: flex; flex-direction: column; gap: .5rem; }
 
   .link {
-    display: flex;
-    align-items: center;
-    gap: .875rem;
-    min-height: 58px;
-    padding: .75rem 1rem;
+    display: flex; align-items: center; gap: .875rem;
+    min-height: 58px; padding: .75rem 1rem;
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: var(--radius);
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; color: inherit;
     box-shadow: var(--shadow);
     transition: transform .15s ease, border-color .15s ease;
   }
   .link:hover { border-color: var(--blue-pure); transform: translateY(-1px); }
   .link:active { transform: translateY(0); }
   .link:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
-  .link.featured { border-left: 4px solid var(--green-pure); }
 
   .link .body { flex: 1; min-width: 0; }
   .link .title { display: block; font-weight: 600; font-size: .9375rem; line-height: 1.3; }
   .link .desc { display: block; font-size: .8125rem; color: var(--ink-soft); line-height: 1.35; }
 
-  .chip {
-    display: inline-block;
-    background: var(--yellow);
-    color: #1c2531;
-    font-size: .625rem;
-    font-weight: 700;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    padding: .0625rem .375rem;
-    border-radius: 4px;
-    margin-right: .375rem;
-    vertical-align: 1px;
+  /* The social rows carry the platform's own mark — that is what people scan for. */
+  .link .glyph {
+    width: 42px; height: 42px; border-radius: 11px;
+    background: var(--blue-soft); color: var(--blue);
+    display: grid; place-items: center; flex-shrink: 0;
   }
+  .link.social .title { font-size: 1rem; }
+  .link.social .desc { font-variant-numeric: tabular-nums; }
 
-  .when {
-    font-size: .6875rem;
-    color: var(--ink-soft);
-    font-variant-numeric: tabular-nums;
-    letter-spacing: .02em;
-    flex-shrink: 0;
-  }
   .chev { color: var(--ink-soft); flex-shrink: 0; }
   .link:hover .chev, .crisis:hover .chev { color: var(--blue); }
 
-  /* ---------- Socials ---------- */
-  .socials { display: flex; justify-content: center; gap: .5rem; }
-  .social {
-    width: 52px; height: 52px;
-    display: grid; place-items: center;
-    border-radius: var(--radius);
-    background: var(--surface);
-    border: 1px solid var(--line);
-    color: var(--ink-soft);
-    text-decoration: none;
-    box-shadow: var(--shadow);
-    transition: color .15s ease, border-color .15s ease;
-  }
-  .social:hover { color: var(--blue); border-color: var(--blue-pure); }
-  .social:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
-
-  /* ---------- Footer ---------- */
-  footer {
-    text-align: center;
-    font-size: .8125rem;
-    color: var(--ink-soft);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .125rem;
-  }
-  footer a {
-    color: var(--blue);
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-block;
-    padding: .5rem .75rem;
-  }
-  footer a:hover { text-decoration: underline; }
-
-  @media (prefers-reduced-motion: reduce) {
-    * { transition: none !important; animation: none !important; }
-  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
 <div class="page">
@@ -315,36 +199,28 @@
     <div class="crisis-intro" id="crisisIntro"></div>
   </section>
 
-  <section class="stack" id="featuredSection" hidden>
+  <section class="section">
     <div class="section-head">
-      <h2>Recently shared</h2>
-      <span class="rule"></span>
-      <span class="note">Newest first</span>
-    </div>
-    <div class="stack" id="featuredList"></div>
-  </section>
-
-  <section class="stack">
-    <div class="section-head">
-      <h2>Always here</h2>
+      <h2>Follow us</h2>
       <span class="rule"></span>
     </div>
-    <div class="stack" id="permanentList"></div>
+    <div class="stack" id="socialList"></div>
   </section>
 
-  <nav class="socials" id="socialList" aria-label="Social media"></nav>
+  <section class="section" id="alsoSection" hidden>
+    <div class="section-head">
+      <h2>Also find us</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="stack" id="alsoList"></div>
+  </section>
 
-  <footer>
-    <div id="footerNote"></div>
-  </footer>
 </div>
 
 <script>
 (function () {
   "use strict";
 
-  // Fallback content — used when links.json can't be loaded (for example when you
-  // open index.html straight off your desktop). The deployed site reads links.json.
   var FALLBACK = {
   "org": {
     "name": "Elizabeth Layton Center",
@@ -472,75 +348,29 @@
 
   function el(tag, cls) { var n = document.createElement(tag); if (cls) n.className = cls; return n; }
 
-  function parseDate(iso) {
-    var p = String(iso || "").split("-");
-    if (p.length !== 3) return null;
-    var d = new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
-    return isNaN(d) ? null : d;
-  }
-  function formatDate(iso) {
-    var d = parseDate(iso);
-    return d ? d.toLocaleDateString("en-US", { month: "short", day: "numeric" }) : "";
-  }
-  function isRecent(iso, days) {
-    var d = parseDate(iso);
-    if (!d) return false;
-    return (Date.now() - d.getTime()) < days * 86400000;
-  }
-
   function externalize(a, url) {
     a.href = url;
-    if (!/^(tel:|mailto:|#)/.test(url)) { a.target = "_blank"; a.rel = "noopener noreferrer"; }
+    if (/^https?:\/\//i.test(url)) { a.target = "_blank"; a.rel = "noopener noreferrer"; }
   }
 
-  function makeLink(item, isFeatured, markNew) {
-    var a = el("a", "link" + (isFeatured ? " featured" : ""));
-    externalize(a, item.url);
+  function row(cls, title, desc, url, iconKey) {
+    var a = el("a", cls);
+    externalize(a, url);
+
+    if (iconKey && ICONS[iconKey]) {
+      var g = el("div", "glyph");
+      g.innerHTML = svg(ICONS[iconKey], 22);
+      a.appendChild(g);
+    }
 
     var body = el("div", "body");
     var t = el("span", "title");
-    if (markNew) {
-      var chip = el("span", "chip");
-      chip.textContent = "New";
-      t.appendChild(chip);
-    }
-    t.appendChild(document.createTextNode(item.title));
+    t.textContent = title;
     body.appendChild(t);
-
-    if (item.description) {
+    if (desc) {
       var d = el("span", "desc");
-      d.textContent = item.description;
+      d.textContent = desc;
       body.appendChild(d);
-    }
-    a.appendChild(body);
-
-    if (isFeatured && item.date) {
-      var w = el("span", "when");
-      w.textContent = formatDate(item.date);
-      a.appendChild(w);
-    }
-    a.insertAdjacentHTML("beforeend", CHEV);
-    return a;
-  }
-
-  function makeCrisis(item) {
-    var a = el("a", "crisis");
-    externalize(a, item.url);
-    var body = el("div", "c-body");
-
-    var t = el("span", "c-title");
-    t.textContent = item.title;
-    body.appendChild(t);
-
-    if (item.description) {
-      var s = el("span", "c-sub");
-      s.textContent = item.description;
-      body.appendChild(s);
-    }
-    if (item.meta) {
-      var m = el("span", "c-meta");
-      m.textContent = item.meta;
-      body.appendChild(m);
     }
     a.appendChild(body);
     a.insertAdjacentHTML("beforeend", CHEV);
@@ -549,9 +379,13 @@
 
   function render(data) {
     var org = data.org || {};
-    document.title = org.name ? org.name + " — Links" : "Links";
-    document.getElementById("tagline").textContent = org.tagline || "";
+    var connect = data.connect || {};
 
+    document.title = (org.name || "Layton Center") + " — Find us online";
+    document.getElementById("tagline").textContent =
+      connect.intro || "Here's where you can find us online.";
+
+    /* Crisis, pinned above everything */
     var cb = document.getElementById("crisisBlock");
     var crisis = data.crisis || [];
     if (!crisis.length) {
@@ -559,44 +393,46 @@
     } else {
       document.getElementById("crisisIntro").textContent =
         org.crisisIntro || "If you need help right now";
-      crisis.forEach(function (i) { cb.appendChild(makeCrisis(i)); });
-    }
+      crisis.forEach(function (c) {
+        var a = el("a", "crisis");
+        externalize(a, c.url);
+        var body = el("div", "c-body");
 
-    var featured = (data.featured || []).slice().sort(function (a, b) {
-      return String(b.date || "").localeCompare(String(a.date || ""));
-    });
-    if (featured.length) {
-      document.getElementById("featuredSection").hidden = false;
-      var fl = document.getElementById("featuredList");
-      // Only the single newest item is badged, and only for its first three weeks.
-      featured.forEach(function (i, idx) {
-        fl.appendChild(makeLink(i, true, idx === 0 && isRecent(i.date, 21)));
+        var t = el("span", "c-title");
+        t.textContent = c.title;
+        body.appendChild(t);
+
+        if (c.description) {
+          var s = el("span", "c-sub");
+          s.textContent = c.description;
+          body.appendChild(s);
+        }
+        if (c.meta) {
+          var m = el("span", "c-meta");
+          m.textContent = c.meta;
+          body.appendChild(m);
+        }
+        a.appendChild(body);
+        a.insertAdjacentHTML("beforeend", CHEV);
+        cb.appendChild(a);
       });
     }
 
-    var pl = document.getElementById("permanentList");
-    (data.permanent || []).forEach(function (i) { pl.appendChild(makeLink(i, false)); });
-
+    /* The socials are the point of this page */
     var sl = document.getElementById("socialList");
     (data.social || []).forEach(function (s) {
-      var a = el("a", "social");
-      externalize(a, s.url);
-      a.setAttribute("aria-label", s.label || s.icon);
-      a.innerHTML = svg(ICONS[s.icon] || ICONS.x, 24);
-      sl.appendChild(a);
+      sl.appendChild(row("link social", s.label,
+        s.handle || s.url.replace(/^https?:\/\/(www\.)?/, ""), s.url, s.icon));
     });
 
-    var f = document.getElementById("footerNote");
-    if (org.website) {
-      var link = el("a");
-      externalize(link, org.website);
-      link.textContent = (org.websiteLabel || org.website).replace(/^https?:\/\/(www\.)?/, "");
-      f.appendChild(link);
-    }
-    if (org.footer) {
-      var note = el("div");
-      note.textContent = org.footer;
-      f.appendChild(note);
+    /* Everything else */
+    var also = connect.also || [];
+    if (also.length) {
+      document.getElementById("alsoSection").hidden = false;
+      var al = document.getElementById("alsoList");
+      also.forEach(function (o) {
+        al.appendChild(row("link", o.title, o.description, o.url));
+      });
     }
   }
 

@@ -12,7 +12,7 @@
 
   "crisis": [
     {
-      "title": "Layton Center After Hours Crisis Services 1-800-241-1266",
+      "title": "Layton Center Crisis Line",
       "description": "The fastest way to reach local help and resources.",
       "meta": "Local · 24/7 · Confidential",
       "url": "https://www.laytoncenter.org/our-services/crisisemergency/"
@@ -28,15 +28,15 @@
   "featured": [
     {
       "title": "Chamber Coffee with the Layton Center",
-      "description": "Get details on the Osawatomie Chamber Page",
-      "url": "https://www.osawatomiechamber.org/event-details/chamber-coffee-elizabeth-layton-center",
-      "date": "2026-08-17"
+      "description": "See photos and details on Facebook",
+      "url": "https://www.facebook.com/share/1G54Tf3gSC/",
+      "date": "2026-08-28"
     },
     {
       "title": "How to talk to someone about getting help",
       "description": "A practical guide from SAMHSA",
       "url": "https://www.samhsa.gov/find-support/helping-someone/how-to-talk-to-someone-about-help",
-      "date": "2026-09-01"
+      "date": "2026-08-20"
     }
   ],
 
@@ -59,15 +59,36 @@
     { "icon": "linkedin",  "label": "LinkedIn",  "handle": "Elizabeth Layton Center", "url": "https://www.linkedin.com/company/elizabeth-layton-center/" }
   ],
 
+  "connect": {
+    "intro": "Here's where you can find us online.",
+    "also": [
+      {
+        "title": "laytoncenter.org",
+        "description": "Services, locations, and how to get started",
+        "url": "https://www.laytoncenter.org/"
+      },
+      {
+        "title": "Careers",
+        "description": "Open positions and how to apply",
+        "url": "https://recruiting.paylocity.com/recruiting/jobs/All/58dc1f30-e893-4dd0-9d06-0cf79f0b7abe/Elizabeth-Layton-Center-Inc"
+      }
+    ]
+  },
+
   "internal": {
     "careersUrl": "https://recruiting.paylocity.com/recruiting/jobs/All/58dc1f30-e893-4dd0-9d06-0cf79f0b7abe/Elizabeth-Layton-Center-Inc",
-    "careersNote": "This links to the Careers portal, so it's always accurate.",
+    "careersNote": "Always current — this link never goes stale.",
     "referralBlurb": "I work at the Elizabeth Layton Center and I think you'd be a good fit for our team. Here's everything we have open right now:",
     "otherLinks": [
       {
-        "title": "Post links page",
-        "description": "This is the Instagram link in bio page, with links from social media posts.",
+        "title": "Public link page",
+        "description": "What the Instagram bio link points to",
         "url": "index.html"
+      },
+      {
+        "title": "Find us online",
+        "description": "Socials, website, and careers \u2014 the page to share or QR",
+        "url": "connect.html"
       },
       {
         "title": "Layton Center website",

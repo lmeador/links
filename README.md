@@ -1,21 +1,23 @@
 # Elizabeth Layton Center — link pages
 
-Two pages, one shared list of links:
+Three pages, one shared list of links:
 
 - `index.html` — the **public** page. This is the Instagram bio link.
+- `connect.html` — the **"find us online"** page. Socials first, no rotating items.
 - `internal.html` — the **staff** page. Socials, careers referrals, crisis line.
 - `links.json` — everything both pages display. **This is the only file you'll edit.**
 - `favicon.png` / `favicon-dark.png` — the dogwood mark, shown as the browser tab icon.
 
-Both pages read the same `links.json`, so changing a social URL or the crisis line in
-one place updates both. Both logo versions are embedded inside each HTML file, so
-there's no separate logo file to manage.
+All three pages read the same `links.json`, so changing a social URL or the crisis
+line in one place updates all of them. Both logo versions are embedded inside each
+HTML file, so there's no separate logo file to manage.
 
-**The two URLs will be:**
+**The three URLs will be:**
 
 | | |
 |---|---|
-| Public | `links-a1b.workers.dev/` |
+| Public link page | `links-a1b.workers.dev/` |
+| Find us online | `links-a1b.workers.dev/connect.html` |
 | Staff | `links-a1b.workers.dev/internal.html` |
 
 ---
@@ -28,8 +30,8 @@ there's no separate logo file to manage.
 2. Click **+** (top right) → **New repository**.
 3. Name it `links`. Set it to **Public**. Click **Create repository**.
 4. On the next screen click **uploading an existing file**.
-5. Drag in `index.html`, `internal.html`, `links.json`, `favicon.png`,
-   `favicon-dark.png`, and this `README.md`.
+5. Drag in `index.html`, `connect.html`, `internal.html`, `links.json`,
+   `favicon.png`, `favicon-dark.png`, and this `README.md`.
 6. Click **Commit changes**.
 
 ### 2. Connect Cloudflare
@@ -92,7 +94,7 @@ the commas, or paste me the file and I'll fix it.
 
 ---
 
-## How the page is built
+## How the public page is built (`index.html`)
 
 **Crisis block, pinned at the top.** Layton Center's crisis line first (local, fastest
 route to real resources), 988 second. Both are labeled 24/7 and confidential so a
@@ -109,10 +111,37 @@ you tap. The double rules between sections are the same device as the logo. Blue
 interactive, plum marks crisis, green marks the rotating section, and yellow is used
 once, on the NEW badge, so it means something.
 
-Both pages follow the visitor's light/dark setting. Each carries both logo versions —
+All three pages follow the visitor's light/dark setting. Each carries both logo versions —
 black artwork on light, your white artwork on dark — and swaps between them, rather
 than inverting one file in CSS. Same for the favicon: `favicon.png` for light browser
 chrome, `favicon-dark.png` for dark.
+
+---
+
+## The "find us online" page (`connect.html`)
+
+One job: tell someone where the Layton Center exists on the internet. No rotating
+items, so it never goes stale and never needs maintenance. Good for a QR code on
+print material, an email signature, or anywhere you'd otherwise write out three
+social handles.
+
+Order on the page: crisis line, then the three social accounts with their handles,
+then the website and careers under "Also find us." Each social row is one big tap
+target — the whole card is the link.
+
+**Edit it** in the `"connect"` section of `links.json`:
+
+```json
+"connect": {
+  "intro": "Here's where you can find us online.",
+  "also": [
+    { "title": "laytoncenter.org", "description": "...", "url": "..." }
+  ]
+}
+```
+
+The social accounts come from the shared `"social"` list, so adding a fourth platform
+adds it to all three pages at once.
 
 ---
 
