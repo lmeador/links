@@ -65,8 +65,8 @@
     "referralBlurb": "I work at the Elizabeth Layton Center and I think you'd be a good fit for our team. Here's everything we have open right now:",
     "otherLinks": [
       {
-        "title": "Public link page",
-        "description": "What the Instagram bio link points to",
+        "title": "Post links page",
+        "description": "This is the Instagram link in bio page, with links from social media posts.",
         "url": "index.html"
       },
       {
